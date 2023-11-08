@@ -1,0 +1,17 @@
+DROP DATABASE booking_database;
+CREATE DATABASE booking_database;
+use booking_database;
+CREATE TABLE room (
+    room_id INT PRIMARY KEY,
+    room_type ENUM('Regular', 'Deluxe', 'Suite') NOT NULL
+);
+CREATE TABLE booking (
+    booking_id INT AUTO_INCREMENT PRIMARY KEY,
+    schedule DATETIME NOT NULL,
+    room_id INT NOT NULL,
+    guest_name VARCHAR(255) NOT NULL,
+    contact_number VARCHAR(20) NOT NULL,
+    guest_email VARCHAR(255) NOT NULL,
+    reference_id VARCHAR(255) GENERATED ALWAYS AS (CONCAT(REPLACE(CAST(schedule AS DATE), '-', ''), room_id)) STORED,
+    FOREIGN KEY (room_id) REFERENCES room (room_id)
+);

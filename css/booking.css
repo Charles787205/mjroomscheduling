@@ -1,0 +1,88 @@
+.booking_page {
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(2, 2, 2, 0.514)),
+    url("../img/hotel_room.jpg");
+}
+.booking_form {
+  color: white;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  border-radius: 5px;
+  height: fit-content;
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0.582);
+  box-shadow: 0 0 5px white;
+}
+.booking_button {
+  background-color: rgba(0, 0, 0, 0.432);
+  color: white;
+  margin-top: 30px;
+  border: none;
+  box-shadow: 0 0 5px white;
+}
+.room_type_card button {
+  margin-top: 30px;
+}
+.booking_form input {
+  padding: 0 5px;
+}
+.room_type_container {
+  display: flex;
+  gap: 40px;
+  padding: 2rem;
+}
+
+.room_type_card {
+  max-width: 300px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 1.5rem;
+  box-shadow: 0 0 5px white;
+  border-radius: 5px;
+}
+.room_type_card h3 {
+  margin-top: 30px;
+}
+.room_type_card .button {
+  float: right;
+  padding: 3px 20px;
+  background-color: rgba(0, 0, 0, 0.582);
+  color: white;
+  border: none;
+  box-shadow: 0 0 5px white;
+  margin-bottom: 10px;
+}
+.room_type_card button:hover {
+  transform: scale(1.05);
+  background-color: rgba(29, 29, 29, 0.082);
+  box-shadow: 0 0 5px white, 0 0 10px white;
+}
+.reference_popup {
+  position: fixed;
+  top: 15rem;
+  left: auto;
+  width: 400px;
+  gap: 20px;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    rgb(37, 36, 36),
+    rgba(15, 2, 2, 0.925)
+  );
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px white, 0 0 10px white;
+}
+.reference_popup p {
+  margin-top: 1rem;
+}
+
+#reference_button {
+  padding: 1px 5px;
+  box-shadow: 0 0 5px white;
+  color: white;
+  float: right;
+}
